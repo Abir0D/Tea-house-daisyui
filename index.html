@@ -8,13 +8,27 @@
     <!-- tailwind css daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome for icon -->
+    <script src="https://kit.fontawesome.com/0d75634f0f.js" crossorigin="anonymous"></script>
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
     <!-- styles -->
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
 
@@ -30,7 +44,36 @@
 </head>
 
 <body class="font-manrope">
+  <header class="container mx-auto">
+    <div class="hero gap-4">
+      <div class="hero-content flex-col lg:flex-row">
+        <div class="">
+          <h1 class="text-[80px] font-extrabold text-[#1C1C1C] font-manrope mt-16">
+            It's good <br> 
+            tea time at The <br>
+             Tea House</h1>
+          <p class="py-6 text-[#777777] w-96">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <button class="btn btn-primary text-white w-48 font-bold text-lg font-manrope">Explore More</button>
+        </div>
+         <div>
+          <img src="images/banner.png" class="max-w-sm" />
+          <!-- rating badge -->
+          <div class="-mt-16 rounded-xl flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"> 
+            <i class="fa-solid fa-star text-yellow-400 text-3xl"></i>
+            <div class="text-3xl text-black"><h3>5.00</h3>
+             <p class="text-[#777777] text-sm">Trust Pilot Ratings</p>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </header>
+  <main>
 
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
